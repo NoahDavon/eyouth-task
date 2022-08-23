@@ -9,8 +9,10 @@ export default function Home() {
         <title>EBooth - Your Next Best Movie</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div class="font-extrabold text-6xl text-white mx-auto my-20 w-fit text-center">
-        Who's Ready For Movie Night?
+      <div class="text-white mx-auto my-20 w-fit text-center">
+        <div class="font-extrabold text-6xl">
+          Who's Ready For Movie Night?
+        </div>
       </div>
     </div>
   )
