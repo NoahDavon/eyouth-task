@@ -3,7 +3,7 @@ import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return(
-    <div className='bg-gradient-to-b from-gray-900 to-indigo-800 h-screen'>
+    <div className='bg-gradient-to-b from-gray-900 to-violet-800 h-screen'>
       <Navbar/>
       <Component {...pageProps} />
     </div>
