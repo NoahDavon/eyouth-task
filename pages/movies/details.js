@@ -41,7 +41,7 @@ function MovieDetails() {
             You may also like:
         </div> 
         <div className='flex overflow-scroll mt-10 gap-8'>
-            {recommendations?.slice(0,10).map(movie => <MovieCard movie={movie}/>)}
+            {recommendations?.slice(0,10).map(movie => <MovieCard key={movie.id} movie={movie}/>)}
         </div>
     </div> 
     );

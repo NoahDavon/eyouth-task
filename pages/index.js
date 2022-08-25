@@ -12,11 +12,11 @@ export default function Home() {
     <div className='p-10'>
       <div className="flex flex-col text-white mx-auto my-20 w-fit text-center">
         <div className="font-extrabold text-6xl">
-          Who's Ready For Movie Night?      
+          {"Who's Ready For Movie Night?"}    
         </div>
       </div>
       <div className='flex overflow-scroll mt-10 gap-8 p-10'>
-            {recommendations?.map(movie => <MovieCard movie={movie}/>)}
+            {recommendations?.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
       </div>
       <div className='flex flex-col w-1/4 mx-auto p-10 mt-10 justify-center rounded-xl bg-violet-900'>
         <div className='text-center font-bold mb-10'>

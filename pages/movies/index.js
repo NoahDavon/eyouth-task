@@ -24,7 +24,7 @@ function Movies()
     return (
         <div className='w-fit mx-auto p-5'>
             <div className='grid grid-cols-4 gap-4'>
-                {movies?.map(movie => <MovieCard movie={movie}/>)?? <div>No Results</div>}
+                {movies?.map(movie => <MovieCard key={movie.id} movie={movie}/>)?? <div>No Results</div>}
             </div>
             <div className='bg-white/50 w-fit rounded-xl mx-auto mt-5 px-4 py-1'>
                 <Pagination color='secondary' showLastButton count={pageCount} onChange={(_,p) => setPage(p)}/>
