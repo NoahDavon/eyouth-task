@@ -35,7 +35,7 @@ export default function Navbar() {
             <div className="w-8 h-0.5 bg-violet-600"></div>
             <div className="w-8 h-0.5 bg-violet-600"></div>
           </button>
-            <Menu anchorEl={anchor} open={anchor} onClose={()=> setAnchor(null)}>
+            <Menu anchorEl={anchor} open={anchor? true: false} onClose={()=> setAnchor(null)}>
               <MenuItem><MainButton href="/movies/?src=playing">Now Playing</MainButton></MenuItem>
               <MenuItem><MainButton href="/movies/?src=popular">Most Popular</MainButton></MenuItem>
               <MenuItem><MainButton href="/movies/?src=top">Top Rated</MainButton></MenuItem>

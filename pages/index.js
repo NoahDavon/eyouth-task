@@ -18,23 +18,23 @@ export default function Home() {
       <div className='flex overflow-scroll mt-10 gap-8 p-10'>
             {recommendations?.map(movie => <MovieCard key={movie.id} movie={movie}/>)}
       </div>
-      <div className='flex flex-col w-1/4 mx-auto p-10 mt-10 justify-center rounded-xl bg-violet-900'>
+      <div className='flex flex-col md:w-3/4 mx-auto p-10 mt-10 justify-center rounded-xl bg-violet-900'>
         <div className='text-center font-bold mb-10'>
           Login
         </div>
-        <form className='flex flex-col gap-4 mx-auto'>
+        <form className='flex flex-col justify-center w-3/4 gap-4 mx-auto text-gray-800'>
           <input type="email" placeholder='E-mail'/>
           <input type="password" placeholder='Password'/>
-          <button type='submit' className='bg-indigo-800 hover:bg-indigo-700 p-4 rounded'>Login</button>
+          <button type='submit' className='bg-indigo-800 text-white hover:bg-indigo-700 p-4 rounded'>Login</button>
         </form>
-        <div className='text-center font-bold m-10'>
+        <div className='text-center font-bold my-10'>
           Register
         </div>
-        <form className='flex flex-col gap-4 mx-auto'>
+        <form className='flex flex-col justify-center w-3/4 gap-4 mx-auto text-gray-800'>
           <input type="email" placeholder='E-mail'/>
           <input type="password" placeholder='Password'/>
           <input type="password" placeholder='Repeat password'/>
-          <button type='submit' className='bg-indigo-800 hover:bg-indigo-700 p-4 rounded'>Sign up</button>
+          <button type='submit' className='bg-indigo-800 text-white hover:bg-indigo-700 p-4 rounded'>Sign up</button>
         </form>
       </div>
     </div>
